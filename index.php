@@ -5,12 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista Sintética de UFs</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <?php
       $data = [
         [
-            "Bandeira" => "Bandeira do Acre.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Bandeira_do_Acre.svg" alt="Bandeira do Acre" width="45"/>',
             "Unidade Federativa" => "Acre",
             "Abreviação" => "AC",
             "Sede do Governo" => "Rio Branco",
@@ -26,7 +27,7 @@
             "Expectativa de Vida (2016)" => "73.9 anos"
         ],
         [
-            "Bandeira" => "Bandeira de Alagoas.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Bandeira_de_Alagoas.svg" alt="Bandeira de Alagoas" width="45"/>',
             "Unidade Federativa" => "Alagoas",
             "Abreviação" => "AL",
             "Sede do Governo" => "Maceió",
@@ -42,7 +43,7 @@
             "Expectativa de Vida (2016)" => "71.6 anos"
         ],
         [
-            "Bandeira" => "Bandeira do Amapá.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Bandeira_do_Amap%C3%A1.svg" alt="Bandeira do Amapá" width="45"/>',
             "Unidade Federativa" => "Amapá",
             "Abreviação" => "AP",
             "Sede do Governo" => "Macapá",
@@ -58,7 +59,7 @@
             "Expectativa de Vida (2016)" => "73.9 anos"
         ],
         [
-            "Bandeira" => "Bandeira do Amazonas.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Bandeira_do_Amazonas.svg" alt="Bandeira do Amazonas" width="45"/>',
             "Unidade Federativa" => "Amazonas",
             "Abreviação" => "AM",
             "Sede do Governo" => "Manaus",
@@ -74,7 +75,7 @@
             "Expectativa de Vida (2016)" => "71.9 anos"
         ],
         [
-            "Bandeira" => "Bandeira da Bahia.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Bandeira_da_Bahia.svg" alt="Bandeira da Bahia" width="45"/>',
             "Unidade Federativa" => "Bahia",
             "Abreviação" => "BA",
             "Sede do Governo" => "Salvador",
@@ -90,7 +91,7 @@
             "Expectativa de Vida (2016)" => "73.5 anos"
         ],
         [
-            "Bandeira" => "Bandeira do Ceará.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Bandeira_do_Cear%C3%A1.svg" alt="Bandeira do Ceará" width="45"/>',
             "Unidade Federativa" => "Ceará",
             "Abreviação" => "CE",
             "Sede do Governo" => "Fortaleza",
@@ -106,7 +107,7 @@
             "Expectativa de Vida (2016)" => "73.8 anos"
         ],
         [
-            "Bandeira" => "Bandeira do Distrito Federal (Brasil).svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Bandeira_do_Distrito_Federal_%28Brasil%29.svg" alt="Bandeira do Distrito Federal" width="45"/>',
             "Unidade Federativa" => "Distrito Federal",
             "Abreviação" => "DF",
             "Sede do Governo" => "Brasília",
@@ -122,7 +123,7 @@
             "Expectativa de Vida (2016)" => "78.1 anos"
         ],
         [
-            "Bandeira" => "Bandeira do Espírito Santo.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Bandeira_do_Esp%C3%ADrito_Santo.svg" alt="Bandeira do Espírito Santo" width="45"/>',
             "Unidade Federativa" => "Espírito Santo",
             "Abreviação" => "ES",
             "Sede do Governo" => "Vitória",
@@ -138,7 +139,7 @@
             "Expectativa de Vida (2016)" => "78.2 anos"
         ],
         [
-            "Bandeira" => "Flag of Goiás.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Flag_of_Goi%C3%A1s.svg" alt="Bandeira de Goiás" width="45"/>',
             "Unidade Federativa" => "Goiás",
             "Abreviação" => "GO",
             "Sede do Governo" => "Goiânia",
@@ -154,7 +155,7 @@
             "Expectativa de Vida (2016)" => "74.2 anos"
         ],
         [
-            "Bandeira" => "Bandeira do Maranhão.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Bandeira_do_Maranh%C3%A3o.svg" alt="Bandeira do Maranhão" width="45"/>',
             "Unidade Federativa" => "Maranhão",
             "Abreviação" => "MA",
             "Sede do Governo" => "São Luís",
@@ -170,7 +171,7 @@
             "Expectativa de Vida (2016)" => "70.6 anos"
         ],
         [
-            "Bandeira" => "Bandeira de Mato Grosso.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Bandeira_de_Mato_Grosso.svg" alt="Bandeira do Mato Groso" width="45"/>',
             "Unidade Federativa" => "Mato Grosso",
             "Abreviação" => "MT",
             "Sede do Governo" => "Cuiabá",
@@ -186,7 +187,7 @@
             "Expectativa de Vida (2016)" => "74.2 anos"
         ],
         [
-            "Bandeira" => "Bandeira de Mato Grosso do Sul.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Bandeira_de_Mato_Grosso_do_Sul.svg" alt="Bandeira do Mato Grosso do Sul" width="45"/>',
             "Unidade Federativa" => "Mato Grosso do Sul",
             "Abreviação" => "MS",
             "Sede do Governo" => "Campo Grande",
@@ -202,7 +203,7 @@
             "Expectativa de Vida (2016)" => "75.1 anos"
         ],
         [
-            "Bandeira" => "Bandeira de Minas Gerais.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Bandeira_de_Minas_Gerais.svg" alt="Bandeira de Minas Gerais" width="45"/>',
             "Unidade Federativa" => "Minas Gerais",
             "Abreviação" => "MG",
             "Sede do Governo" => "Belo Horizonte",
@@ -218,7 +219,7 @@
             "Expectativa de Vida (2016)" => "76.6 anos"
         ],
         [
-            "Bandeira" => "Flag of Pará.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Bandeira_do_Par%C3%A1.svg" alt="Bandeira do Pará" width="45"/>',
             "Unidade Federativa" => "Pará",
             "Abreviação" => "PA",
             "Sede do Governo" => "Belém",
@@ -234,7 +235,7 @@
             "Expectativa de Vida (2016)" => "71.7 anos"
         ],
         [
-            "Bandeira" => "Bandeira da Paraíba.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Bandeira_da_Para%C3%ADba.svg" alt="Bandeira da Paraíba" width="45"/>',
             "Unidade Federativa" => "Paraíba",
             "Abreviação" => "PB",
             "Sede do Governo" => "João Pessoa",
@@ -250,7 +251,7 @@
             "Expectativa de Vida (2016)" => "74.1 anos"
         ],
         [
-            "Bandeira" => "Bandeira do Paraná.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Bandeira_do_Paran%C3%A1.svg" alt="Bandeira do Paraná" width="45"/>',
             "Unidade Federativa" => "Paraná",
             "Abreviação" => "PR",
             "Sede do Governo" => "Curitiba",
@@ -266,7 +267,7 @@
             "Expectativa de Vida (2016)" => "77.5 anos"
         ],
         [
-            "Bandeira" => "Bandeira de Pernambuco.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Bandeira_de_Pernambuco.svg" alt="Bandeira de Pernambuco" width="45"/>',
             "Unidade Federativa" => "Pernambuco",
             "Abreviação" => "PE",
             "Sede do Governo" => "Recife",
@@ -282,7 +283,7 @@
             "Expectativa de Vida (2016)" => "73.9 anos"
         ],
         [
-            "Bandeira" => "Flag of Piauí.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Bandeira_do_Piau%C3%AD.svg" alt="Bandeira do Piauí" width="45"/>',
             "Unidade Federativa" => "Piauí",
             "Abreviação" => "PI",
             "Sede do Governo" => "Teresina",
@@ -298,7 +299,7 @@
             "Expectativa de Vida (2016)" => "70.8 anos"
         ],
         [
-            "Bandeira" => "Bandeira do Rio de Janeiro.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg" alt="Bandeira do Rio de Janeiro" width="45"/>',
             "Unidade Federativa" => "Rio de Janeiro",
             "Abreviação" => "RJ",
             "Sede do Governo" => "Rio de Janeiro",
@@ -314,7 +315,7 @@
             "Expectativa de Vida (2016)" => "76.7 anos"
         ],
         [
-            "Bandeira" => "Bandeira do Rio Grande do Norte.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Bandeira_do_Rio_Grande_do_Norte.svg" alt="Bandeira do Rio Grande do Norte" width="45"/>',
             "Unidade Federativa" => "Rio Grande do Norte",
             "Abreviação" => "RN",
             "Sede do Governo" => "Natal",
@@ -330,7 +331,7 @@
             "Expectativa de Vida (2016)" => "75.1 anos"
         ],
         [
-            "Bandeira" => "Flag of Rio Grande do Sul.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Bandeira_do_Rio_Grande_do_Sul.svg" alt="Bandeira do Rio Grande do Sul" width="45"/>',
             "Unidade Federativa" => "Rio Grande do Sul",
             "Abreviação" => "RS",
             "Sede do Governo" => "Porto Alegre",
@@ -346,7 +347,7 @@
             "Expectativa de Vida (2016)" => "77.8 anos"
         ],
         [
-            "Bandeira" => "Bandeira de Rondônia.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Bandeira_de_Rond%C3%B4nia.svg" alt="Bandeira de Rondônia" width="45"/>',
             "Unidade Federativa" => "Rondônia",
             "Abreviação" => "RO",
             "Sede do Governo" => "Porto Velho",
@@ -362,7 +363,7 @@
             "Expectativa de Vida (2016)" => "72.9 anos"
         ],
         [
-            "Bandeira" => "Bandeira de Roraima.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Bandeira_de_Roraima.svg" alt="Bandeira de Roraima" width="45"/>',
             "Unidade Federativa" => "Roraima",
             "Abreviação" => "RR",
             "Sede do Governo" => "Boa Vista",
@@ -378,7 +379,7 @@
             "Expectativa de Vida (2016)" => "72.4 anos"
         ],
         [
-            "Bandeira" => "Bandeira de Santa Catarina.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Bandeira_de_Santa_Catarina.svg" alt="Bandeira de Santa Catarina" width="45"/>',
             "Unidade Federativa" => "Santa Catarina",
             "Abreviação" => "SC",
             "Sede do Governo" => "Florianópolis",
@@ -394,7 +395,7 @@
             "Expectativa de Vida (2016)" => "79.1 anos"
         ],
         [
-            "Bandeira" => "Flag of São Paulo.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg" alt="Bandeira de São Paulo" width="45"/>',
             "Unidade Federativa" => "São Paulo",
             "Abreviação" => "SP",
             "Sede do Governo" => "São Paulo",
@@ -410,7 +411,7 @@
             "Expectativa de Vida (2016)" => "77.4 anos"
         ],
         [
-            "Bandeira" => "Bandeira de Sergipe.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Bandeira_de_Sergipe.svg" alt="Bandeira de Sergipe" width="45"/>',
             "Unidade Federativa" => "Sergipe",
             "Abreviação" => "SE",
             "Sede do Governo" => "Aracaju",
@@ -426,7 +427,7 @@
             "Expectativa de Vida (2016)" => "72.7 anos"
         ],
         [
-            "Bandeira" => "Flag of Tocantins.svg",
+            "Bandeira" => '<img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Bandeira_do_Tocantins.svg" alt="Bandeira de Tocantins" width="45"/>',
             "Unidade Federativa" => "Tocantins",
             "Abreviação" => "TO",
             "Sede do Governo" => "Palmas",
@@ -442,7 +443,34 @@
             "Expectativa de Vida (2016)" => "73.9 anos"
         ]
     ]
-    
   ?>
+
+  <main class="container">
+        <table>
+            <caption>Unidades federativas do Brasil</caption>
+            <thead>
+            <?php
+                foreach ($data[0] as $key => $value) {
+                    echo '<th>' . $key . '</th>';
+                }    
+            ?>
+            </thead>
+            <tbody>
+                <tr>
+                    <?php
+                        foreach($data as $row) {
+                            echo '<tr>';
+                                foreach ($row as $key => $value) {
+                                    echo '<td '. 
+                                        ($key === "Bandeira" ? 'style="text-align: center;"' : '')
+                                    .'>' . $value . '</td>';
+                                }
+                            echo '</tr>';
+                        }
+                    ?>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 </body>
 </html>

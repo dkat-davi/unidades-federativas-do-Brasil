@@ -1,0 +1,72 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(90deg, rgb(0, 35, 68), rgb(0, 195, 255));
+}
+
+body::-webkit-scrollbar {
+  width: 1rem;
+  background-color: rgb(0, 195, 255);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 63, 122);
+  border-radius: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3.0rem;
+}
+
+table {
+    max-width: 90%;
+    border-collapse: collapse;
+    position: relative;
+}
+
+caption {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1.0rem;
+    color: white;
+    max-width: 99vw;
+    border: .1rem solid black;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+}
+
+td, th, caption {
+    border: .1rem solid white;
+    padding: .5rem;
+    color: white;
+}
+
+thead, tfoot {
+    background-color: rgb(0, 59, 107);
+    color: white;
+}
+
+
+
+tbody > tr:nth-child(2n) { 
+    background-color: rgba(0, 5, 80, 0.178);
+}
+
