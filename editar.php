@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista Sintética de UFs</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Dados</title>
 </head>
 <body>
-  <?php
+    <h1>Editar Dados</h1>
+    <!-- DATA -->
+    <?php
       $data = [
         [
             "Bandeira" => 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bandeira_do_Acre.svg',
@@ -446,43 +445,64 @@
     ]
   ?>
 
-  <main class="container">
-        <table>
-            <caption>Unidades federativas do Brasil</caption>
-            <thead>
-            <?php
-                foreach ($data[0] as $key => $value) {
-                    echo '<th>' . $key . '</th>';
-                }    
-                echo '<th>Editar</th>';
-            ?>
-            </thead>
-            <tbody>
-                <tr>
-                    <?php
-                        foreach($data as $row) {
-                            echo '<tr>';
-                                echo "<td style=\"text-align: center;\"><img src=\"{$row['Bandeira']}\" alt=\"Bandeira do Estado\" width=\"45\"></td>";
-                                echo "<td>{$row['Unidade Federativa']}</td>";
-                                echo "<td>{$row['Abreviação']}</td>";
-                                echo "<td>{$row['Sede do Governo']}</td>";
-                                echo "<td>{$row['Área']}</td>";
-                                echo "<td>{$row['População']}</td>";
-                                echo "<td>{$row['Densidade']}</td>";
-                                echo "<td>{$row['PIB (2015)']}</td>";
-                                echo "<td>{$row['(% total) (2015)']}</td>";
-                                echo "<td>{$row['PIB per capita (R$) (2015)']}</td>";
-                                echo "<td>{$row['IDH (2010)']}</td>";
-                                echo "<td>{$row['Alfabetização (2016)']}</td>";
-                                echo "<td>{$row['Mortalidade Infantil (2016)']}</td>";
-                                echo "<td>{$row['Expectativa de Vida (2016)']}</td>";
-                                echo "<td style=\"text-align: center;\"><a href=\"./editar.php?id={$row['Abreviação']}\"><i class=\"fa-solid fa-pen-to-square\"></i></a></td>";
-                            echo '</tr>';
-                        }
-                    ?>
-                </tr>
-            </tbody>
-        </table>
-    </main>
+    <form method="get">
+    <?php
+        if(isset($_GET['id'])) {
+            $id = $_GET['id'];
+            echo "<h1>{$state}</h1>";
+        }
+
+        foreach($data as $state) {
+            if($state['Abreviação'] === $id) {
+                
+                echo "<img src=\"{$state['Bandeira']}\" alt=\"Bandeira do Estado\" width=\"45\"><br>";
+                
+                echo "<label>Unidade Federativa:</label>";
+                echo "<input type=\"text\" value=\"{$state['Unidade Federativa']}\"><br>";
+
+                echo "<label>Abreviação:</label>";
+                echo "<input type=\"text\" value=\"{$state['Abreviação']}\"><br>";
+
+                echo "<label>Sede do Governo:</label>";
+                echo "<input type=\"text\" value=\"{$state['Sede do Governo']}\"><br>";
+
+                echo "<label>Área:</label>";
+                echo "<input type=\"text\" value=\"{$state['Área']}\"><br>";
+
+                echo "<label>População:</label>";
+                echo "<input type=\"text\" value=\"{$state['População']}\"><br>";
+
+                echo "<label>Densidade:</label>";
+                echo "<input type=\"text\" value=\"{$state['Densidade']}\"><br>";
+
+                echo "<label>PIB (2015):</label>";
+                echo "<input type=\"text\" value=\"{$state['PIB (2015)']}\"><br>";
+
+                echo "<label>(% total) (2015):</label>";
+                echo "<input type=\"text\" value=\"{$state['(% total) (2015)']}\"><br>";
+
+                echo "<label>PIB per capita (R$) (2015):</label>";
+                echo "<input type=\"text\" value=\"{$state['PIB per capita (R$) (2015)']}\"><br>";
+
+                echo "<label>IDH (2010):</label>";
+                echo "<input type=\"text\" value=\"{$state['IDH (2010)']}\"><br>";
+
+                echo "<label>Alfabetização (2016):</label>";
+                echo "<input type=\"text\" value=\"{$state['Alfabetização (2016)']}\"><br>";
+
+                echo "<label>Mortalidade Infantil (2016):</label>";
+                echo "<input type=\"text\" value=\"{$state['Mortalidade Infantil (2016)']}\"><br>";
+
+                echo "<label>Expectativa de Vida (2016):</label>";
+                echo "<input type=\"text\" value=\"{$state['Expectativa de Vida (2016)']}\"><br>";
+            }
+
+        }
+    ?>  
+    </form>
+
+        
+
+
 </body>
 </html>
